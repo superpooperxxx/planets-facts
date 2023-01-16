@@ -1,8 +1,12 @@
+import "./App.scss";
+import { ParticlesBackground } from "./components/ParticlesBackground/ParticlesBackground";
+
 function App() {
   return (
-    <div className="App">
-      Starter
-    </div>
+    <>
+      <div>dfvvdfvdf</div>
+      <ParticlesBackground />
+    </>
   );
 }
 
