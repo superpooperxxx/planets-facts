@@ -1,0 +1,61 @@
+@use "../../sassStyles/mixins" as *;
+@use "../../sassStyles/colors" as *;
+@use "../../sassStyles/collections" as *;
+
+.Nav {
+  display: none;
+
+  @include onTablet {
+    display: block;
+  }
+
+  @include onDesktop {
+    height: 100%;
+  }
+
+  &__List {
+    display: flex;
+    gap: 33px;
+    height: inherit;
+  }
+
+  &__Item {
+    position: relative;
+    height: inherit;
+
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+
+    @include onDesktop {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 4px;
+        width: 100%;
+        
+        transition: background-color 0.5s;
+      }
+
+      @each $planet, $color in $planets {
+        &--#{$planet}:hover, &--#{$planet}-active {
+          &::after {
+            background: #{$color};
+          }
+        }
+      }
+    }
+  }
+
+  &__Link {
+    display: flex;
+    align-items: center;
+    height: inherit;
+
+    color: $color-main;
+    opacity: 0.9;
+  }
+}

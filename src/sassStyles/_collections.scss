@@ -1,0 +1,11 @@
+@use "./colors" as *;
+
+$planets: 
+  "Mercury" $color-Mercury, 
+  "Venus" $color-Venus, 
+  "Earth" $color-Earth,
+  "Mars" $color-Mars, 
+  "Jupiter" $color-Jupiter, 
+  "Saturn" $color-Saturn,
+  "Uranus" $color-Uranus, 
+  "Neptune" $color-Neptune;

@@ -1,0 +1,6 @@
+@use "../../sassStyles/colors" as *;
+
+.Main {
+  min-height: 100vh;
+  color: $color-main;
+}

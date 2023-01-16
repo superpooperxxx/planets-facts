@@ -1,19 +1,21 @@
-import { useMemo } from 'react';
-import Particles from 'react-tsparticles';
-import { loadSlim } from 'tsparticles-slim';
+import { useMemo } from "react";
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
 
 export const ParticlesBackground = () => {
   const options = useMemo(() => {
     return {
+      detectRetina: true,
+      fpsLimit: 60,
+      fullScreen: { zIndex: -1 },
       background: {
         color: {
           value: "#070724",
-        }
+        },
       },
-      fpsLimit: 60,
       particles: {
         color: {
-          value: "#393950"
+          value: "#393950",
         },
         move: {
           enable: true,
@@ -27,13 +29,14 @@ export const ParticlesBackground = () => {
         },
         number: {
           value: 50,
-        }
+        },
+        opacity: { min: 0.5, max: 1 },
       },
     };
   }, []);
 
   const particlesInit = (engine) => {
-    loadSlim(engine)
+    loadSlim(engine);
   };
 
   return <Particles init={particlesInit} options={options} />;
