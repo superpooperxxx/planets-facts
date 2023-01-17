@@ -1,5 +1,6 @@
 @use "../../sassStyles/colors" as *;
 @use "../../sassStyles/mixins" as *;
+@use "../../sassStyles/variables" as *;
 
 .Header {
   border-bottom: 1px solid $color-borders;
@@ -9,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
 
-    height: 70px;
+    height: $header-height--mobile;
     padding: 0 24px;
 
     @include onTablet {

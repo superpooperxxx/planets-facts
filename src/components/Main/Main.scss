@@ -1,4 +1,5 @@
 @use "../../sassStyles/colors" as *;
+@use "../../sassStyles/variables" as *;
 
 .Main {
   min-height: 100vh;
@@ -8,7 +9,7 @@
     position: fixed;
     left: 0;
     right: 0;
-    top: 71px;
+    top: $header-height--mobile + 1px;
     bottom: 0;
   }
 }
