@@ -3,4 +3,12 @@
 .Main {
   min-height: 100vh;
   color: $color-main;
+
+  &__Mobile-Nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 71px;
+    bottom: 0;
+  }
 }
