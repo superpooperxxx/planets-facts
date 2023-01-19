@@ -19,10 +19,10 @@ export const ParticlesBackground = () => {
         },
         move: {
           enable: true,
-          speed: 1,
+          speed: {min: 0.1, max: 1},
         },
         collisions: {
-          enable: true,
+          enable: false,
         },
         size: {
           value: { min: 1, max: 5 },

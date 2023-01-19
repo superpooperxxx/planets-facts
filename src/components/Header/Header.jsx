@@ -1,8 +1,12 @@
 import cn from 'classnames';
+import { useContext } from 'react';
+import { GlobalContext } from '../GlobalProvider/GlobalProvider';
 import { Nav } from "../Nav/Nav";
 import "./Header.scss";
 
 export const Header = ({ handleMobileNav }) => {
+  const { isMobile } = useContext(GlobalContext);
+
   return (
     <header className="Header">
       <div className="Container Header__Container">
@@ -10,21 +14,21 @@ export const Header = ({ handleMobileNav }) => {
           The planets
         </a>
 
-        {/* To be hidden on Mobile resolution */}
-        <Nav />
+        {!isMobile && <Nav />}
 
-        {/* To be hidden on Tablet+ resolution */}
-        <button
-          type="button"
-          className={cn(
-            'Header__Menu-btn',
-            {
-              'Header__Menu-btn--active': false,
-            }
-          )}
-          aria-label="button to open navigation"
-          onClick={handleMobileNav}
-        ></button>
+        {isMobile && (
+          <button
+            type="button"
+            className={cn(
+              'Header__Menu-btn',
+              {
+                'Header__Menu-btn--active': false,
+              }
+            )}
+            aria-label="button to open navigation"
+            onClick={handleMobileNav}
+          ></button>
+        )}
       </div>
     </header>
   );

@@ -7,7 +7,7 @@ import { GlobalContext } from '../GlobalProvider/GlobalProvider';
 export const Nav = React.memo(
   () => {
     const { currentPlanet, setCurrentPlanet } = useContext(GlobalContext);
-    console.log('render');
+
     return (
       <nav className="Nav">
         <ul className="Nav__List">

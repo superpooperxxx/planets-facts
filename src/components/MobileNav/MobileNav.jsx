@@ -1,6 +1,5 @@
 import React, { useContext }  from 'react';
 import './MobileNav.scss';
-import cn from 'classnames';
 import { planetsNames } from '../../api/planetsInfo';
 import { GlobalContext } from '../GlobalProvider/GlobalProvider';
 
@@ -13,12 +12,7 @@ export const MobileNav = ({ isOpened, close }) => {
   };
 
   return (
-    <nav className={cn(
-      'Mobile-Nav Main__Mobile-Nav',
-      {
-        'Mobile-Nav--Hidden': !isOpened,
-      },
-    )}>
+    <nav className="Mobile-Nav Main__Mobile-Nav">
       <ul className="Mobile-Nav__List">
         {planetsNames.map(planet => (
           <li className="Mobile-Nav__Item" key={planet}>

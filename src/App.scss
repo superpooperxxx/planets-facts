@@ -1,6 +1,17 @@
 @use "./sassStyles/reset";
+@use "./sassStyles/mixins" as *;
 
 .Container {
   max-width: 1440px;
   margin: 0 auto;
+
+  padding: 0 24px;
+
+  @include onTablet {
+    padding: 0 40px;
+  }
+
+  @include onDesktop {
+    padding: 0 165px;
+  }
 }

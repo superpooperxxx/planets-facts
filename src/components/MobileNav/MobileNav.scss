@@ -8,14 +8,9 @@
   background: $color-background;
   overflow-y: scroll;
 
-  transition: transform 0.5s;
 
   @include onTablet {
     display: none;
-  }
-
-  &--Hidden {
-    transform: translateX(-100%);
   }
 
   &__Link {

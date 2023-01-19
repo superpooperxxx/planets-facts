@@ -1,24 +1,35 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import './PageContent.scss';
 import { PlanetNavMobile } from '../PlanetNavMobile/PlanetNavMobile';
 import { GlobalContext } from '../GlobalProvider/GlobalProvider';
 
 export const PageContent = () => {
-  const { currentPlanet } = useContext(GlobalContext);
+  const [currentInfo, setCurrentInfo] = useState('overview');
+  const { currentPlanet, isMobile } = useContext(GlobalContext);
+
+  useEffect(() => {
+    setCurrentInfo('overview');
+  }, [currentPlanet]);
 
   return (
-    <section className='Page-Content Container'>
-      {/* Seen only on Mobile */}
-      <PlanetNavMobile /> 
+    <section className='Page-Content'>
+      {isMobile && (
+        <PlanetNavMobile
+          currentInfo={currentInfo}
+          setInfo={setCurrentInfo}
+        />
+      )}
 
-      <div className="Page-Content__Main">
-        <div>{ currentPlanet }</div>
-        <div>
-          <div>text</div>
-          <div>nav</div>
+      <div className="Container">
+        <div className="Page-Content__Main">
+          <div>{ currentPlanet }</div>
+          <div>
+            <div>{currentInfo}</div>
+            <div>nav</div>
+          </div>
         </div>
+        <ul className="Planet-Details"></ul>
       </div>
-      <ul className="Planet-Details"></ul>
     </section>
   );
 };

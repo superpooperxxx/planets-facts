@@ -1,2 +1,46 @@
 @use "../../sassStyles/colors" as *;
+@use "../../sassStyles/collections" as *;
 
+.Planet-Nav-Mobile {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-borders;
+
+  &__Btn {
+    position: relative;
+
+    height: 50px;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      height: 4px;
+      width: 100%;
+      opacity: 0;
+
+      transition: opacity 0.5s;
+    }
+
+    @each $planet, $color in $planets {
+      &--#{$planet}::after {
+        background-color: $color;
+      }
+    }
+
+    &--Active {
+      color: $color-main;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
