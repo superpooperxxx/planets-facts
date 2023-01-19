@@ -51,6 +51,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    transition: opacity 0.5s;
 
     &::before,
     &::after {

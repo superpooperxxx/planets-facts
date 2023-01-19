@@ -1,11 +1,15 @@
 import "./App.scss";
+import { GlobalProvider } from "./components/GlobalProvider/GlobalProvider";
 import { Main } from "./components/Main/Main";
 import { ParticlesBackground } from "./components/ParticlesBackground/ParticlesBackground";
 
 function App() {
   return (
     <>
-      <Main />
+      <GlobalProvider>
+        <Main />
+      </GlobalProvider>
+
       <ParticlesBackground />
     </>
   );

@@ -1,27 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import cn from 'classnames';
 import './Nav.scss';
-import planetsNames from '../../api/planetsNames';
+import { planetsNames } from '../../api/planetsInfo';
+import { GlobalContext } from '../GlobalProvider/GlobalProvider';
 
 export const Nav = React.memo(
-  ({ setPlanet }) => {
+  () => {
+    const { currentPlanet, setCurrentPlanet } = useContext(GlobalContext);
+    console.log('render');
     return (
       <nav className="Nav">
         <ul className="Nav__List">
-          {planetsNames.map((planet) => (
+          {planetsNames.map(planet => (
             <li
               key={planet}
               className={cn(
                 `Nav__Item Nav__Item--${planet}`,
                 {
-                  [`Nav__Item--${planet}-active`]: false,
+                  [`Nav__Item--${planet}-active`]: planet === currentPlanet,
                 }
               )}
             >
               <button
                 type="button"
                 className="Nav__Link"
-                onClick={() => setPlanet(planet)}
+                onClick={() => setCurrentPlanet(planet)}
               >
                 { planet }
               </button>

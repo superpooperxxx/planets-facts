@@ -1,13 +1,10 @@
 import "./Main.scss";
 import { Header } from "../Header/Header";
 import { MobileNav } from "../MobileNav/MobileNav";
-import { planetsInfo } from '../../api/planetsInfo';
 import { useState } from "react";
-
-const planetsNames = Object.keys(planetsInfo);
+import { PageContent } from "../PageContent/PageContent";
 
 export const Main = () => {
-  const [currentPlanet, setCurrentPlanet] =  useState('Mercury');
   const [isMobileNavOpened, setIsMobileNavOpened] = useState(false);
 
   const handleMobileNav = () => {
@@ -16,18 +13,15 @@ export const Main = () => {
 
   return (
     <main className="Main">
-      <Header
-        opened={isMobileNavOpened}
-        handleMobileNav={handleMobileNav}
-        setPlanet={setCurrentPlanet}
-      />
+      <Header handleMobileNav={handleMobileNav} />
+
+      {/* To be hidden on Tablet+ resolution */}
       <MobileNav
-        planets={planetsNames}
-        opened={isMobileNavOpened}
-        handleNavClose={setIsMobileNavOpened}
-        setPlanet={setCurrentPlanet}
+        isOpened={isMobileNavOpened}
+        close={setIsMobileNavOpened}
       />
-      {currentPlanet}
+
+      <PageContent />
     </main>
   );
 };
