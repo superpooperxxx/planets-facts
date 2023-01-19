@@ -15,7 +15,10 @@ export const Main = () => {
 
   return (
     <main className="Main">
-      <Header handleMobileNav={handleMobileNav} />
+      <Header
+        isOpened={isMobileNavOpened}
+        handleMobileNav={handleMobileNav}
+      />
 
       {(isMobileNavOpened && isMobile) && (
         <MobileNav

@@ -4,7 +4,7 @@ import { GlobalContext } from '../GlobalProvider/GlobalProvider';
 import { Nav } from "../Nav/Nav";
 import "./Header.scss";
 
-export const Header = ({ handleMobileNav }) => {
+export const Header = ({ isOpened, handleMobileNav }) => {
   const { isMobile } = useContext(GlobalContext);
 
   return (
@@ -22,7 +22,7 @@ export const Header = ({ handleMobileNav }) => {
             className={cn(
               'Header__Menu-btn',
               {
-                'Header__Menu-btn--active': false,
+                'Header__Menu-btn--active': isOpened,
               }
             )}
             aria-label="button to open navigation"

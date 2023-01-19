@@ -4,6 +4,7 @@
 .Planet-Nav-Mobile {
   display: flex;
   justify-content: space-between;
+
   border-bottom: 1px solid $color-borders;
 
   &__Btn {
@@ -13,8 +14,9 @@
     font-size: 9px;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 1.9px;
 
-    color: rgba(255, 255, 255, 0.5);
+    color: $color-main--opacity-half;
 
     &::after {
       content: "";

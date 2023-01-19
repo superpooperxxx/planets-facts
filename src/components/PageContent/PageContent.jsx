@@ -2,6 +2,8 @@ import { useContext, useEffect, useState } from 'react';
 import './PageContent.scss';
 import { PlanetNavMobile } from '../PlanetNavMobile/PlanetNavMobile';
 import { GlobalContext } from '../GlobalProvider/GlobalProvider';
+import { PlanetDetails } from '../PlanetDetails/PlanetDetails';
+import { planetsInfo } from '../../api/planetsInfo';
 
 export const PageContent = () => {
   const [currentInfo, setCurrentInfo] = useState('overview');
@@ -28,7 +30,7 @@ export const PageContent = () => {
             <div>nav</div>
           </div>
         </div>
-        <ul className="Planet-Details"></ul>
+        <PlanetDetails details={planetsInfo[currentPlanet].details} />
       </div>
     </section>
   );
