@@ -1,0 +1,56 @@
+@use "../../sassStyles/colors" as *;
+@use "../../sassStyles/collections" as *;
+@use "../../sassStyles/mixins" as *;
+
+.Planet-Nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  margin-top: 55px;
+
+  @include onDesktop {
+    margin-top: 0;
+    margin-bottom: 85px;
+  }
+
+  &__Item {
+    @for $index from 1 through 3 {
+      &:nth-child(#{$index}) .Planet-Nav__Btn {
+        &::before {
+          content: "#{"0" + $index}";
+          margin-right: 15px;
+          color: $color-main--opacity-half;
+        }
+      }
+    }
+  }
+
+  &__Btn {
+    width: 280px;
+    height: 40px;
+
+    padding-left: 20px;
+
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    color: $color-main;
+    
+    border: 1px solid $color-borders;
+    
+    @each $planet, $color in $planets {
+      &--#{$planet} {
+        background-color: $color;
+      }
+    }
+
+    @include onDesktop {
+      width: 100%;
+      height: 48px;
+
+      font-size: 12px;
+    }
+  }
+}

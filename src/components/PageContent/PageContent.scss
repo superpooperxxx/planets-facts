@@ -1,3 +1,37 @@
+@use "../../sassStyles/mixins" as *;
+
 .Page-Content {
+  padding-bottom: 47px;
   
+  &__Main {
+    margin-bottom: 28px;
+
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 30px;
+
+      margin-bottom: 0;
+    }
+  }
+
+  &__Planet-Image {
+    @include onDesktop {
+      grid-column: 1 / 8;
+    }
+  }
+
+  &__Info {
+    @include onTablet {
+      display: flex;
+      justify-content: space-between;
+      gap: 70px;
+    }
+
+    @include onDesktop {
+      grid-column: 9 / 13;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
 }

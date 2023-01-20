@@ -7,7 +7,7 @@ const planetNavBtns = ['overview', 'structure', 'geology'];
 
 export const PlanetNavMobile = ({ currentInfo, setInfo }) => {
   const { currentPlanet } = useContext(GlobalContext);
-  
+
   return (
     <ul className="Planet-Nav-Mobile Container">
       {planetNavBtns.map(btn => (
