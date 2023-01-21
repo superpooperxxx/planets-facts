@@ -8,11 +8,6 @@ export const ParticlesBackground = () => {
       detectRetina: true,
       fpsLimit: 60,
       fullScreen: { zIndex: -1 },
-      background: {
-        color: {
-          value: "#070724",
-        },
-      },
       particles: {
         color: {
           value: "#393950",
