@@ -4,6 +4,11 @@
 .Main {
   color: $color-main;
 
+  &--Overflow_Hidden {
+    height: 100vh;
+    overflow: hidden;
+  }
+
   &__Mobile-Nav {
     position: fixed;
     left: 0;

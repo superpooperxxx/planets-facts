@@ -1,4 +1,5 @@
 import "./Main.scss";
+import cn from 'classnames';
 import { Header } from "../Header/Header";
 import { MobileNav } from "../MobileNav/MobileNav";
 import { useContext, useState } from "react";
@@ -14,7 +15,12 @@ export const Main = () => {
   };
 
   return (
-    <main className="Main">
+    <main className={cn(
+      'Main',
+      {
+        'Main--Overflow_Hidden': isMobileNavOpened,
+      }
+    )}>
       <Header
         isOpened={isMobileNavOpened}
         handleMobileNav={handleMobileNav}
