@@ -23,7 +23,7 @@ export const ParticlesBackground = () => {
           value: { min: 1, max: 5 },
         },
         number: {
-          value: 50,
+          value: 70,
         },
         opacity: { min: 0.5, max: 1 },
       },

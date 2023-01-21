@@ -33,6 +33,8 @@
     color: $color-main;
     
     border: 1px solid $color-borders;
+
+    transition: background-color 0.5s;
     
     @each $planet, $color in $planets {
       &--#{$planet} {

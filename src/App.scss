@@ -1,9 +1,12 @@
 @use "./sassStyles/reset";
 @use "./sassStyles/mixins" as *;
 @use "./sassStyles/colors" as *;
+@import "./sassStyles/typography";
 
 body {
   background-color: $color-background;
+  background: rgb(2,2,17);
+  background: linear-gradient(180deg, rgb(1, 1, 13) 0%, $color-background 100%);
 }
 
 .Overflow--Hidden {
