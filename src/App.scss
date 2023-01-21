@@ -1,8 +1,9 @@
 @use "./sassStyles/reset";
 @use "./sassStyles/mixins" as *;
+@use "./sassStyles/colors" as *;
 
 body {
-  background-color: #070724;
+  background-color: $color-background;
 }
 
 .Container {

@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
@@ -30,9 +30,15 @@ export const ParticlesBackground = () => {
     };
   }, []);
 
-  const particlesInit = (engine) => {
+  const particlesInit = useCallback((engine) => {
     loadSlim(engine);
-  };
+  }, []);
 
-  return <Particles init={particlesInit} options={options} />;
+  return (
+    <Particles
+      id="tsparticles"
+      init={particlesInit}
+      options={options} 
+    />
+  );
 };

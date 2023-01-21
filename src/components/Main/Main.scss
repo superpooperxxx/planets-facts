@@ -2,7 +2,6 @@
 @use "../../sassStyles/variables" as *;
 
 .Main {
-  min-height: 100vh;
   color: $color-main;
 
   &__Mobile-Nav {

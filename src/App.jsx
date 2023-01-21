@@ -6,11 +6,11 @@ import { ParticlesBackground } from "./components/ParticlesBackground/ParticlesB
 function App() {
   return (
     <>
+     <ParticlesBackground />
+
       <GlobalProvider>
         <Main />
       </GlobalProvider>
-
-      <ParticlesBackground />
     </>
   );
 }
