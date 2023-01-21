@@ -1,8 +1,7 @@
 import "./Main.scss";
-import cn from 'classnames';
 import { Header } from "../Header/Header";
 import { MobileNav } from "../MobileNav/MobileNav";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { PageContent } from "../PageContent/PageContent";
 import { GlobalContext } from "../GlobalProvider/GlobalProvider";
 
@@ -14,13 +13,14 @@ export const Main = () => {
     setIsMobileNavOpened(currentState => !currentState);
   };
 
+  useEffect(() => {
+    isMobileNavOpened 
+      ? document.body.classList.add('Overflow--Hidden')
+      : document.body.classList.remove('Overflow--Hidden')
+  }, [isMobileNavOpened])
+
   return (
-    <main className={cn(
-      'Main',
-      {
-        'Main--Overflow_Hidden': isMobileNavOpened,
-      }
-    )}>
+    <main className="Main">
       <Header
         isOpened={isMobileNavOpened}
         handleMobileNav={handleMobileNav}
