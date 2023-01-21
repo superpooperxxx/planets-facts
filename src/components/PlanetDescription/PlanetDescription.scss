@@ -2,9 +2,6 @@
 @use "../../sassStyles/mixins" as *;
 
 .Planet-Description {
-  @include onDesktop {
-    margin-top: 110px;
-  }
 
   &__Title {
     margin-bottom: 16px;

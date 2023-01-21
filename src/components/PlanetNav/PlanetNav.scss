@@ -5,14 +5,8 @@
 .Planet-Nav {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 15px;
-
-  margin-top: 55px;
-
-  @include onDesktop {
-    margin-top: 0;
-    margin-bottom: 85px;
-  }
 
   &__Item {
     @for $index from 1 through 3 {
