@@ -24,7 +24,7 @@ export const HeaderLogo = React.memo(
 
     return (
       <a
-        href="/"
+        href="/planets-facts"
         className="Header__Logo"
         ref={logoRef}
       >
