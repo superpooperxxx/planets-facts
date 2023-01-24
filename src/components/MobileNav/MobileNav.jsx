@@ -47,11 +47,9 @@ export const MobileNav = ({ isOpened, close }) => {
   }, []);
 
   useEffect(() => {
-    if (isOpened) {
-      tl.current.play();
-    } else {
-      tl.current.reverse();
-    }
+    isOpened
+      ? tl.current.play()
+      : tl.current.reverse()
 
   }, [isOpened]);
 

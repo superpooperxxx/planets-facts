@@ -31,6 +31,10 @@
     }
   }
 
+  &__Logo-Container {
+    overflow: hidden;
+  }
+
   &__Logo {
     font-family: "Antonio", sans-serif;
     font-size: 28px;

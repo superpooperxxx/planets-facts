@@ -16,7 +16,7 @@ export const PlanetNavMobile = ({ currentInfo, setInfo }) => {
       {
         y: 0,
         duration: 1,
-        delay: 0.2,
+        delay: 1,
       }
     );
 
