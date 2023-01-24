@@ -14,7 +14,7 @@ export const PlanetNavMobile = ({ currentInfo, setInfo }) => {
     const mobileNavAnim = gsap.to(
       mobileNavRef.current,
       {
-        y: 0,
+        transform: 'translateY(0)',
         duration: 1,
         delay: 1,
       }

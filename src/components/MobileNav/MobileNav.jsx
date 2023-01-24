@@ -2,7 +2,7 @@ import React, {
   useContext,
   useCallback,
   useEffect,
-  useRef,
+  useRef
 }  from 'react';
 import { gsap } from 'gsap';
 import './MobileNav.scss';
@@ -13,8 +13,11 @@ export const MobileNav = ({ isOpened, close }) => {
   const { setCurrentPlanet } = useContext(GlobalContext);
   const tl = useRef();
   const navRef = useRef(null);
+  const navListRef = useRef(null);
 
   useEffect(() => {
+    const navItems = Object.values(navListRef.current.children);
+
     tl.current = gsap.timeline({
       paused: true,
     });
@@ -33,7 +36,7 @@ export const MobileNav = ({ isOpened, close }) => {
     )
 
     tl.current.fromTo(
-      '.Mobile-Nav__Item',
+      navItems,
       {
         opacity: 0,
         y: -50,
@@ -60,7 +63,7 @@ export const MobileNav = ({ isOpened, close }) => {
 
   return (
     <nav className='Mobile-Nav Main__Mobile-Nav' ref={navRef} >
-      <ul className="Mobile-Nav__List">
+      <ul className="Mobile-Nav__List" ref={navListRef}>
         {planetsNames.map(planet => (
           <li className="Mobile-Nav__Item" key={planet}>
             <button

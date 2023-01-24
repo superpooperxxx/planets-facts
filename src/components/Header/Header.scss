@@ -31,10 +31,6 @@
     }
   }
 
-  &__Logo-Container {
-    overflow: hidden;
-  }
-
   &__Logo {
     font-family: "Antonio", sans-serif;
     font-size: 28px;
@@ -42,6 +38,12 @@
     text-transform: uppercase;
     letter-spacing: -1px;
     color: $color-main;
+
+    overflow: hidden;
+  }
+
+  &__Logo div {
+    transform: translateY(-100%);
   }
 
   &__Menu-btn {

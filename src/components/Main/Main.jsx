@@ -1,10 +1,15 @@
-import "./Main.scss";
-import { useCallback } from "react";
-import { Header } from "../Header/Header";
-import { MobileNav } from "../MobileNav/MobileNav";
-import { useContext, useEffect, useState } from "react";
-import { PageContent } from "../PageContent/PageContent";
-import { GlobalContext } from "../GlobalProvider/GlobalProvider";
+import {
+  useContext,
+  useEffect,
+  useState,
+  useCallback 
+} from 'react';
+import './Main.scss';
+import { Header } from '../Header/Header';
+import { MobileNav } from '../MobileNav/MobileNav';
+import { PageContent } from '../PageContent/PageContent';
+import { GlobalContext } from '../GlobalProvider/GlobalProvider';
+import { MainHeader } from '../MainHeader/MainHeader';
 
 export const Main = () => {
   const [isMobileNavOpened, setIsMobileNavOpened] = useState(false);
@@ -26,6 +31,7 @@ export const Main = () => {
         isOpened={isMobileNavOpened}
         handleMobileNav={handleMobileNav}
       />
+      <MainHeader />
 
       {isMobile && (
         <MobileNav
