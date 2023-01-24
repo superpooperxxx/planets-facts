@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/planets/static/css/main.70c86000.css",
-    "main.js": "/planets/static/js/main.d9c7c9dc.js",
-    "static/media/Spartan-Bold.ttf": "/planets/static/media/Spartan-Bold.287f5d6604adc2276da9.ttf",
-    "static/media/Spartan-ExtraLight.ttf": "/planets/static/media/Spartan-ExtraLight.689b7b040c9de7b01e4f.ttf",
-    "static/media/Spartan-Medium.ttf": "/planets/static/media/Spartan-Medium.e855e0cd01fed78be96f.ttf",
-    "static/media/Spartan-Regular.ttf": "/planets/static/media/Spartan-Regular.a3c27c406358bd7b1b3a.ttf",
-    "static/media/surface.png": "/planets/static/media/surface.8cec343d8e60d4b6000c.png",
-    "static/media/Antonio-Medium.ttf": "/planets/static/media/Antonio-Medium.27793f67e528eafe1ce6.ttf",
-    "static/media/Antonio-Regular.ttf": "/planets/static/media/Antonio-Regular.7c1459a083adef44f4dc.ttf",
-    "static/media/structure.svg": "/planets/static/media/structure.d1be143201898fac4379.svg",
-    "static/media/overview.svg": "/planets/static/media/overview.1fce205c50f4657418d4.svg",
-    "index.html": "/planets/index.html",
-    "static/media/icon-source.svg": "/planets/static/media/icon-source.90231c6845b7449a7364.svg",
-    "static/media/icon-hamburger.svg": "/planets/static/media/icon-hamburger.05a40a49142005f6faf2.svg",
-    "static/media/icon-chevron.svg": "/planets/static/media/icon-chevron.8915cee97f993fb990aa.svg",
-    "main.70c86000.css.map": "/planets/static/css/main.70c86000.css.map",
-    "main.d9c7c9dc.js.map": "/planets/static/js/main.d9c7c9dc.js.map"
+    "main.css": "/planets-facts/static/css/main.4993af07.css",
+    "main.js": "/planets-facts/static/js/main.731af089.js",
+    "static/media/Spartan-Bold.ttf": "/planets-facts/static/media/Spartan-Bold.287f5d6604adc2276da9.ttf",
+    "static/media/Spartan-ExtraLight.ttf": "/planets-facts/static/media/Spartan-ExtraLight.689b7b040c9de7b01e4f.ttf",
+    "static/media/Spartan-Medium.ttf": "/planets-facts/static/media/Spartan-Medium.e855e0cd01fed78be96f.ttf",
+    "static/media/Spartan-Regular.ttf": "/planets-facts/static/media/Spartan-Regular.a3c27c406358bd7b1b3a.ttf",
+    "static/media/surface.png": "/planets-facts/static/media/surface.8cec343d8e60d4b6000c.png",
+    "static/media/Antonio-Medium.ttf": "/planets-facts/static/media/Antonio-Medium.27793f67e528eafe1ce6.ttf",
+    "static/media/Antonio-Regular.ttf": "/planets-facts/static/media/Antonio-Regular.7c1459a083adef44f4dc.ttf",
+    "static/media/structure.svg": "/planets-facts/static/media/structure.d1be143201898fac4379.svg",
+    "static/media/overview.svg": "/planets-facts/static/media/overview.1fce205c50f4657418d4.svg",
+    "index.html": "/planets-facts/index.html",
+    "static/media/icon-source.svg": "/planets-facts/static/media/icon-source.90231c6845b7449a7364.svg",
+    "static/media/icon-hamburger.svg": "/planets-facts/static/media/icon-hamburger.05a40a49142005f6faf2.svg",
+    "static/media/icon-chevron.svg": "/planets-facts/static/media/icon-chevron.8915cee97f993fb990aa.svg",
+    "main.4993af07.css.map": "/planets-facts/static/css/main.4993af07.css.map",
+    "main.731af089.js.map": "/planets-facts/static/js/main.731af089.js.map"
   },
   "entrypoints": [
-    "static/css/main.70c86000.css",
-    "static/js/main.d9c7c9dc.js"
+    "static/css/main.4993af07.css",
+    "static/js/main.731af089.js"
   ]
 }
