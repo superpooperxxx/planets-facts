@@ -6,7 +6,7 @@ import './PlanetNav.scss';
 const planetNavBtns = {
   overview: 'overview',
   structure: 'internal structure',
-  geology: 'surface geology',
+  surface: 'surface geology',
 };
 
 export const PlanetNav = ({ currentInfo, setInfo }) => {

@@ -1,4 +1,5 @@
 import "./Main.scss";
+import { useCallback } from "react";
 import { Header } from "../Header/Header";
 import { MobileNav } from "../MobileNav/MobileNav";
 import { useContext, useEffect, useState } from "react";
@@ -9,9 +10,9 @@ export const Main = () => {
   const [isMobileNavOpened, setIsMobileNavOpened] = useState(false);
   const { isMobile } = useContext(GlobalContext);
 
-  const handleMobileNav = () => {
+  const handleMobileNav = useCallback(() => {
     setIsMobileNavOpened(currentState => !currentState);
-  };
+  }, [])
 
   useEffect(() => {
     isMobileNavOpened 
@@ -26,7 +27,7 @@ export const Main = () => {
         handleMobileNav={handleMobileNav}
       />
 
-      {(isMobileNavOpened && isMobile) && (
+      {isMobile && (
         <MobileNav
           isOpened={isMobileNavOpened}
           close={setIsMobileNavOpened}

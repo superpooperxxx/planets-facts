@@ -5,9 +5,8 @@
 .Mobile-Nav {
   padding: 15px 24px 40px;
 
-  background: $color-background;
+  background: $color-background1;
   overflow-y: scroll;
-
 
   @include onTablet {
     display: none;

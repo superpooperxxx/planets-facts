@@ -35,10 +35,15 @@
     border: 1px solid $color-borders;
 
     transition: background-color 0.5s;
+
+    &:hover {
+      background-color: $color-borders;
+    }
     
     @each $planet, $color in $planets {
       &--#{$planet} {
         background-color: $color;
+        pointer-events: none;
       }
     }
 
