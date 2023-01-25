@@ -6,7 +6,9 @@ import { ParticlesBackground } from "./components/ParticlesBackground/ParticlesB
 function App() {
   return (
     <>
-     <ParticlesBackground />
+      <div role="img">
+        <ParticlesBackground />
+      </div>
 
       <GlobalProvider>
         <Main />

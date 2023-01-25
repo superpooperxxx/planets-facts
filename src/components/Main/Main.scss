@@ -3,6 +3,7 @@
 
 .Main {
   color: $color-main;
+  min-height: 100vh;
 
   &__Mobile-Nav {
     position: fixed;
