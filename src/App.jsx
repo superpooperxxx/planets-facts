@@ -10,7 +10,7 @@ function App() {
         <Main />
       </GlobalProvider>
 
-      <div role="img" alt="Stars background">
+      <div role="img" aria-label="Flying stars background">
         <ParticlesBackground />
       </div>
     </>
