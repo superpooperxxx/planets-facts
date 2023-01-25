@@ -6,13 +6,13 @@ import { ParticlesBackground } from "./components/ParticlesBackground/ParticlesB
 function App() {
   return (
     <>
-      <div role="img">
-        <ParticlesBackground />
-      </div>
-
       <GlobalProvider>
         <Main />
       </GlobalProvider>
+
+      <div role="img" alt="Stars background">
+        <ParticlesBackground />
+      </div>
     </>
   );
 }
