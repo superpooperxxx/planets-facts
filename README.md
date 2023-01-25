@@ -46,7 +46,7 @@ Your users should be able to:
 
 ### What I learned
 
-- All React components are functional and are using React hooks: useState, useEffect, useMemo, useCallback, useRef, etc.
+- All React components are functional and are using React hooks: useContext, useState, useEffect, useMemo, useCallback, useRef, etc.
 - Learned how to optimize React app with useEffect and React.memo()
 - For the first time used [Particles.js](https://particles.js.org/) and [GSAP](https://greensock.com/gsap/).
 - Learned how to combine different libraries, so they don't have conflictes.
