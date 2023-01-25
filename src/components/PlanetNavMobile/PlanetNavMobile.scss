@@ -1,5 +1,6 @@
 @use "../../sassStyles/colors" as *;
 @use "../../sassStyles/collections" as *;
+@use "../../sassStyles/mixins" as *;
 
 .Planet-Nav-Mobile {
   display: flex;
@@ -8,6 +9,10 @@
   border-bottom: 1px solid $color-borders;
 
   transform: translateY(-100%);
+
+  @include onTablet {
+    display: none;
+  }
 
   &__Btn {
     position: relative;
