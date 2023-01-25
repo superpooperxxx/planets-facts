@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/planets-facts/static/css/main.28d49227.css",
-    "main.js": "/planets-facts/static/js/main.2074d491.js",
+    "main.js": "/planets-facts/static/js/main.335ada66.js",
     "static/media/Spartan-Bold.ttf": "/planets-facts/static/media/Spartan-Bold.287f5d6604adc2276da9.ttf",
     "static/media/Spartan-ExtraLight.ttf": "/planets-facts/static/media/Spartan-ExtraLight.689b7b040c9de7b01e4f.ttf",
     "static/media/Spartan-Medium.ttf": "/planets-facts/static/media/Spartan-Medium.e855e0cd01fed78be96f.ttf",
@@ -16,10 +16,10 @@
     "static/media/icon-hamburger.svg": "/planets-facts/static/media/icon-hamburger.05a40a49142005f6faf2.svg",
     "static/media/icon-chevron.svg": "/planets-facts/static/media/icon-chevron.8915cee97f993fb990aa.svg",
     "main.28d49227.css.map": "/planets-facts/static/css/main.28d49227.css.map",
-    "main.2074d491.js.map": "/planets-facts/static/js/main.2074d491.js.map"
+    "main.335ada66.js.map": "/planets-facts/static/js/main.335ada66.js.map"
   },
   "entrypoints": [
     "static/css/main.28d49227.css",
-    "static/js/main.2074d491.js"
+    "static/js/main.335ada66.js"
   ]
 }
