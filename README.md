@@ -23,7 +23,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![](demo.png)
+![](planets-gif.gif)
 
 
 ### Links
@@ -54,4 +54,6 @@ Your users should be able to:
 ## Author
 
 - Github - [superpooperxx](https://github.com/superpooperxxx)
+- LinkedIn - [Kyrylo Haiduk](https://www.linkedin.com/in/kyrylo-haiduk/)
+- Telegram - [@haidukwork](https://t.me/haidukwork)
 - Frontend Mentor - [@superpooperxxx](https://www.frontendmentor.io/profile/superpooperxxx)
